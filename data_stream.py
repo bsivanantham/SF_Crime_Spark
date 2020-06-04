@@ -103,8 +103,8 @@ if __name__ == "__main__":
         .builder \
         .master("local[*]") \
         .appName("KafkaSparkStructuredStreaming") \
+        .config("spark.ui.port", "3000")\
         .getOrCreate()
-        #.config("spark.ui.port", "3000")\
 
 
     logger.info("Spark started")
