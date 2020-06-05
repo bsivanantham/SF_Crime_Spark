@@ -4,6 +4,7 @@ Spark project of Udacity's Data Stream Nanodegree
 ## Screenshots
 
 ### Kafka Console Consumer
+**i tried to implement both in workspace and terminal. below both screenshots are there in git
 ![kafka-console-local](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/kafka-consumer-console.png)
 ![kafka-console-workspace](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/Terminal-%20kafakaconsusmerConsole.png)
 
