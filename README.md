@@ -4,13 +4,15 @@ Spark project of Udacity's Data Stream Nanodegree
 ## Screenshots
 
 ### Kafka Console Consumer
-![kafka-console](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/kafka-consumer-console.png)
+![kafka-console-local](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/kafka-consumer-console.png)
+![kafka-console-workspace](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/Terminal-%20kafakaconsusmerConsole.png)
 
 ### Spark Progress Report
-![progress-report](https://github.com/matheusjorge/udacity_data_streaming_sf_crimes/blob/master/images/spark-progress-report-screenshot.PNG)
+![progress-report](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/dataStrean.png)
 
 ### Spark UI
-![spark-ui](https://github.com/matheusjorge/udacity_data_streaming_sf_crimes/blob/master/images/spark-ui-streaming-screenshot.PNG)
+![spark-ui](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/SparkUI.png)
+![spark-ui](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/output.png)
 
 ## Questions
 
