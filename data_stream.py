@@ -34,10 +34,11 @@ def run_spark_job(spark):
         .option("kafka.bootstrap.servers", "localhost:9092")\
         .option("subscribe", "com.udacity.spark.v1")\
         .option("startingOffsets", "earliest")\
-        .option("maxOffsetPerTrigger", 200)\
+        .option("maxRatePerPartition", 100) \
+        .option("maxOffsetPerTrigger", 100) \
         .load()
     
-    print('=== printSchema')
+    #print('=== printSchema')
 
     # Show schema for the incoming resources for checks
     df.printSchema()
@@ -89,6 +90,7 @@ def run_spark_job(spark):
                 .writeStream\
                 .format("console")\
                 .outputMode("complete")\
+                .queryName("join") \
                 .start()
 
 
