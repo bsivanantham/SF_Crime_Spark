@@ -14,6 +14,7 @@ Spark project of Udacity's Data Stream Nanodegree
 ### Spark UI
 ![spark-ui](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/SparkUI.png)
 ![spark-ui](https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/output.png)
+<a href="url"><img src="https://github.com/bsivanantham/SF_Crime_Spark/blob/master/images/output.png" align="left" height="48" width="48" ></a>
 
 ## Questions
 
