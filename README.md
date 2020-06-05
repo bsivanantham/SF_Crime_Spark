@@ -16,21 +16,15 @@ Spark project of Udacity's Data Stream Nanodegree
 
 ## Questions
 
-### Question 1
+### 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 
-I tested `maxRatePerPartition` and `maxOffsetPerTrigger`. 
 
-When we increase the value of `maxRatePerPartition` the latency drops and the throughput increases.
+I tried to use both `maxRatePerPartition` and `maxOffsetPerTrigger`. 
 
-When we decrease the value of `maxOffsetPerTrigger` the latency increases and the throughput decreases.
+The lattency and throughput these two parameters. The `maxRatePerPartition` affects indiirectly(inversly propotional), `maxOffsetPerTrigger` the latency increases and the throughput decreases with decrease in the value.
 
-These answers were evaluated `inputRowsPerSecond` and `processedRowsPerSecond`
+Since batch always waits for previous to be completed. These Sparksessionproperty paremetes affects both latency and throughput.
 
-### Question 2
+### 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
-Best values:
-
-    * `maxRatePerPartition`: 300;
-    * `maxOffserPerTrigger`: 200;
-
-These are the values that give higher `inputRowsPerSecond` and `processedRowsPerSecond`. I have also evaluated if these metrics were similar, meaning we can process the same amount of data that arrives.
+To increase throughput, modiy some of the default parameters like parallelism, partition, macRateperPartition and maxOffsetPerTriger. I also tried fews values to understand how it varies, best values were `maxRatePerPartition`: 300 and `maxOffserPerTrigger`: 200; There are various prossible combinations are possible to increase the `processedRowsPerSecond`
