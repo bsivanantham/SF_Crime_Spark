@@ -57,6 +57,8 @@ def run_spark_job(spark):
                             psf.col("disposition"), 
                             psf.to_timestamp(psf.col("call_date_time")).alias("call_date_time")) 
 
+    distinct_table.printSchema()
+
     # count the number of original crime type
     agg_df = distinct_table\
             .select("original_crime_type_name", "disposition")\
